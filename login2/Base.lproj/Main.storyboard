@@ -17,7 +17,7 @@
             <objects>
                 <viewController storyboardIdentifier="menu" title="menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OsQ-oM-xji" customClass="ViewController" customModule="login2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NQ0-ha-n2v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTf-YD-fLC">
@@ -133,21 +133,26 @@
             </objects>
             <point key="canvasLocation" x="852.17391304347836" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Staff List-->
         <scene sceneID="mVu-Lv-39k">
             <objects>
-                <viewController storyboardIdentifier="StaffList" id="voT-Aq-ddb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StaffList" id="voT-Aq-ddb" customClass="StaffList" customModule="login2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nu1-Sz-AsW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfX-FJ-scd">
-                                <rect key="frame" x="39" y="80" width="313" height="542"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfX-FJ-scd">
+                                <rect key="frame" x="39" y="80" width="313" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="SLIST_TABLE" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3a7-cQ-cx2">
+                                <rect key="frame" x="75" y="146" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="h3T-mm-92E"/>
@@ -158,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bef-d9-lHD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1220.2898550724638" y="-256.47321428571428"/>
+            <point key="canvasLocation" x="-1555.072463768116" y="-216.29464285714286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RKY-j1-Y2b">
@@ -183,6 +188,6 @@
         <image name="NutStar-Logo.jpg" width="1308" height="538"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d4b-Ng-rkO"/>
+        <segue reference="Oe8-Zr-bNU"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -58,6 +58,7 @@
 		F46FFFF52385861500D4E72F /* login2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login2Tests.swift; sourceTree = "<group>"; };
 		F46FFFF72385861500D4E72F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F46FFFFC2385861500D4E72F /* login2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = login2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A5FF5923B3228B00715C2F /* login2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "login2-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +129,7 @@
 				F44114E1238F33B50066C60B /* nutstar_logo1.png */,
 				F44114E2238F33B50066C60B /* company_logo.jpg */,
 				F44114DB238F2FB80066C60B /* lilly.jpeg */,
+				F4A5FF5923B3228B00715C2F /* login2-Bridging-Header.h */,
 			);
 			path = login2;
 			sourceTree = "<group>";
@@ -218,6 +220,7 @@
 				TargetAttributes = {
 					F46FFFDA2385860D00D4E72F = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1130;
 					};
 					F46FFFF02385861500D4E72F = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -374,6 +377,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_HEADERS_RUN_UNIFDEF = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -434,6 +438,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_HEADERS_RUN_UNIFDEF = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -460,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L2G5K843S;
 				INFOPLIST_FILE = login2/Info.plist;
@@ -469,6 +475,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = second.login2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "login2/login2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -478,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L2G5K843S;
 				INFOPLIST_FILE = login2/Info.plist;
@@ -487,6 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = second.login2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "login2/login2-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
